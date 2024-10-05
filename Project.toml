@@ -1,0 +1,4 @@
+name = "MaSB"
+uuid = "c97f3e57-fadc-4394-a87d-de19e4d21c78"
+authors = ["Boris Kaus <kaus@uni-mainz.de>"]
+version = "0.1.0"
