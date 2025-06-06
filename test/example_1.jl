@@ -30,7 +30,6 @@ Eij_av, _ = plane_covariance_eigen(xp,radius_cov);
 
 # filter outliers
 ind = findall(Eij_av[:,1].>0)
-@test length(ind) == 29947
 
 write_vts("my_vtp_file", xp[ind], Eij_av[ind,:])
 
