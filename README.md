@@ -1,4 +1,5 @@
 # GeoTEQ.jl
+[![CI](https://github.com/boriskaus/GeoTEQ.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/boriskaus/GeoTEQ.jl/actions/workflows/CI.yml)
 
 This is a Julia implementation of the [GeoTEQpy](https://github.com/anthony-jourdon/GeoTEQpy) python package, developed by Anthony Jourdon and coworkers.
 It can be used to extract smooth fault planes from geodynamic simulations, where faults form as a result of non-associated plasticity. Typically, such simulations are performed on structured meshes and develop fault zones rather than discrete planes. GeoTEQ can be used, in combination with [ParaView](https://www.paraview.org), to construct smooth fault planes from such data.  
