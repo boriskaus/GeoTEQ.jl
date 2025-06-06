@@ -1,11 +1,11 @@
 
-using WriteVTK
+using WriteVTK, MeshIO, FileIO
 export write_vts, load_ply
 
 """
     write_vts(filename::String, xp, Eij_av)
 
-Writes a paraview file
+Writes a paraview *.vts file
 """
 function write_vts(filename::String, xp, Eij_av)
 
