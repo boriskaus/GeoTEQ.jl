@@ -16,14 +16,16 @@ compute_balls!(ma)
 # Points @ the mid-surface:
 x = ma.D["ma_coords_in"]
 
-# extract only part of them (since we clearly have 2 fault planes)
-x1 = [xl[1] for xl in x];
-ind = findall(x1.>0);
 
-xp = x[ind]
+
+# extract only part of them (since we clearly have 2 fault planes)
+#x1 = [xl[1] for xl in x];
+#ind = findall(x1.>0);
+
+#xp = x[ind]
 
 # 
-Eij_vec, _ = plane_covariance_eigen(xp,1000);
+Eij_vec, Cij_vec = plane_covariance_eigen(xp,1000);
 
 Eij_11 = [Eij[1,1] for Eij in Eij_vec];
 Eij_12 = [Eij[1,2] for Eij in Eij_vec];
