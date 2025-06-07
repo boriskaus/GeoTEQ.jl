@@ -5,6 +5,7 @@ This is a Julia implementation of the [GeoTEQpy](https://github.com/anthony-jour
 It can be used to extract smooth fault planes from geodynamic simulations, where faults form as a result of non-associated plasticity. Typically, such simulations are performed on structured meshes and develop fault zones rather than discrete planes. GeoTEQ can be used, in combination with [ParaView](https://www.paraview.org), to construct smooth fault planes from such data.  
 
 ![strike_slip_example](./doc/img/strike_slip.png)
+![restraining_bend_example](./doc/img/restraining_bend.png)
 
 ### 1. Installation
 Install it in the julia package manager with:
