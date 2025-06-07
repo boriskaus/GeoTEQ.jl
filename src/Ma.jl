@@ -125,7 +125,7 @@ function compute_balls_oneside!(self::MASB, inner::Bool=true)
             ### END FINDING NEAREST NEIGHBOR OF c
             # compute new candidate radius r
             r = compute_radius(p, n, q)
-
+            
             ### EXCEPTIONAL CASES
 
             # if r < 0 closest point was on the wrong side of plane with normal n => start over with SuperRadius on the right side of that plane

@@ -36,7 +36,13 @@ function compute_radius(p, p_n, q)
     # this is basic goniometry
     d = norm(p - q)
     cos_theta = dot(p_n, p - q) / d
-    return d / (2 * cos_theta)
+
+    radius = d / (2 * cos_theta)
+    if isnan(radius) || radius == 0
+        radius = 1e-6
+    end
+
+    return radius
 end
 
 
