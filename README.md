@@ -6,6 +6,7 @@ It can be used to extract smooth fault planes from geodynamic simulations, where
 
 ![strike_slip_example](./doc/img/strike_slip.png)
 ![restraining_bend_example](./doc/img/restraining_bend.png)
+![rift_example](./doc/img/rift_example.png)
 
 ### 1. Installation
 Install it in the julia package manager with:
