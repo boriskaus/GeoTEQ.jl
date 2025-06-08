@@ -45,11 +45,18 @@ julia> xp, Eij_av, Eij_vec = compute_median_surface(ply_fname, radius_ma, radius
 julia> write_vts("median_surface", xp, Eij_av)
 ```
 
-
 If needed, you can also remove outliers with:
 ```julia 
 julia> ind = findall(Eij_av[:,1].>0)
 julia> write_vts("my_vtp_file", xp[ind], Eij_av[ind,:]) # write only active points
+```
+
+Or extrude the original `*.vts` file:
+```julia 
+julia> fname_vts_input = "example-datarestraining_bend-cellfields-e2_v2.vts"
+
+# extrude the mesh in y-direction:
+julia> extrude_vts(fname_vts_input; fname_vts_output="extruded.vts", ymin=4, ymax=6, Δy=1e4)
 ```
 
 
