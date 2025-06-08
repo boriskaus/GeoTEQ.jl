@@ -56,3 +56,5 @@ julia> write_vts("my_vtp_file", xp[ind], Eij_av[ind,:]) # write only active poin
 The basis of the package is the Shrinking Ball algorithm by Ma et al. (2012), following [this](https://github.com/tudelft3d/masbpy) python implementation, which approximates the Medial Axis Transform (MAT) of an oriented point cloud. We have translated it to julia, for speed reasons and to make it simpler to run on different systems.
 
 
+### 6. Funding
+Funding to develop this julia interface was provided by the [ChEESE-2p](https://cheese2.eu) project. 
